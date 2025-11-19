@@ -107,6 +107,7 @@ main p{
     border-radius: 5px;
 }
 form{
+    margin-top: 11px;
     display: flex;
     flex-direction: column;
     gap:11px;
@@ -130,3 +131,43 @@ input{
     font-size: 20px;
     text-align: center;
 }
+
+.section-plan{
+    margin-top: 96px;
+    text-align:    center;
+    padding: 0px 108px 38px 108px;
+}
+
+.section-plan h2{
+    text-align: center;
+    color: #003A8C;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.cards-container{
+    display: flex;
+    margin-top: 43px;
+    gap: 79px;
+    justify-content: center;
+    
+}
+.card-plan{
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding: 22px 25px;
+}
+.card-plan h3{
+    color: #003A8C;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.card-plan p{
+    width: 251px;
+    margin-top: 11px;
+    color: #64748B;
+    font-size: 18px;
+    font-weight: 400;
+}
+   
