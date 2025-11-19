@@ -170,4 +170,66 @@ input{
     font-size: 18px;
     font-weight: 400;
 }
+
+.section-connections{
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    gap: 165px;
+    padding: 66px 108px;
+}
+
+.connection-container{
+    
+    
+}
+
+.connection-container h2{
+    color: #003A8C;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
    
+.card-connections{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    gap: 12px;
+    padding: 8px 12px;
+    margin-bottom: 19px;
+
+    box-shadow: 0px 4px 4px rgba(136, 136, 136, 0.25);
+    transition: 0.4s ease-in-out;
+}
+.card-connections:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.card-connections h3{
+    color: #003A8C;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.card-connections p{
+    color: #64748B;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1px;
+    width: 355px;
+}
+
+.connection-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connection-content h4 {
+    color: #64748B;
+    font-size: 32px;
+    font-weight: 400;
+    width: 389px;
+}
