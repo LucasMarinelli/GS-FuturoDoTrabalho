@@ -45,7 +45,6 @@ header h2 span{
     
 }
 
-
 .btn-header{
     background-color: #0066FF;
     padding: 4px 26px;
@@ -61,4 +60,30 @@ header h2 span{
     border: 1px solid #0066FF;
     color: #0066FF;
     cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0px 108px;
+    gap: 180px;
+}
+
+h1{
+    color: #003A8C;
+    font-weight: 700;
+    font-size: 36px;
+    width: 462px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+main p{
+    color: #64748B;
+    font-weight: 400;
+    font-size: 20px;
+    width: 462px;
+    margin-top: 19px;
 }
