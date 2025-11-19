@@ -87,3 +87,46 @@ main p{
     width: 462px;
     margin-top: 19px;
 }
+
+.section-register{
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003A8C;
+    padding: 46px 456px;
+}
+
+.card-form{
+    display: flex;
+    padding: 33px 77px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:11px;
+}
+
+input{
+    border: 1px solid #ACACAC;
+    border-radius: 8px;
+    padding: 8px 7px;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.btn-register{
+    border-radius: 8px;
+    background-color: #0066FF;
+    color: #FFFFFF;
+    padding: 6px 39px;
+    font-size: 20px;
+    text-align: center;
+}
