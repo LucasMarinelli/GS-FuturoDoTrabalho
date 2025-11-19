@@ -179,10 +179,7 @@ input{
     padding: 66px 108px;
 }
 
-.connection-container{
-    
-    
-}
+
 
 .connection-container h2{
     color: #003A8C;
@@ -232,4 +229,124 @@ input{
     font-size: 32px;
     font-weight: 400;
     width: 389px;
+}
+
+.section-job{
+    padding: 96px 107px;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+.job-container h2{
+    color: #003A8C;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+
+.cards-job{
+    background-color: #F7F7F7;
+    padding: 17px 31px;
+    border-radius: 5px;
+    
+}
+.cards-job p{
+    color: #64748B;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+.card-job{
+    background-color: #FFFFFF;
+    padding: 16px 19px;
+    margin-bottom: 19px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 4px rgba(136, 136, 136, 0.25);
+    transition: 0.5s ease-in-out;
+}
+.card-job:hover{
+    transform: translateY(7px);
+    cursor: pointer;
+    border: 2px solid #003A8C;
+    box-shadow: 0px 4px 4px rgba(0, 58, 140,0.5);
+    background-color: #E9F3FF;
+}
+
+#active{
+    border: 2px solid #003A8C;
+    box-shadow: 0px 4px 4px rgba(0, 58, 140,0.5);
+    background-color: #E9F3FF;
+}
+#active h3{
+    color: #003A8C;
+}
+
+.card-job h3{
+    color: #64748B;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-job h3:hover{
+    color: #003A8C;
+}
+.job{
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding: 27px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.job-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 23px;
+}
+
+
+
+
+.job-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 11px;
+}
+
+.job-info p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #64748B; 
+
+}
+
+.job-section {
+    background-color: #FFFFFF;
+    padding: 15px 96px;
+    border-radius: 5px;
+}
+
+.job-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #64748B;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.job-section p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #64748B; 
+    text-align: center;
+    text-align: center;
 }
