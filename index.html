@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h2>Talently <span>Hub</span></h2>
-        <nav class="nav-header">
+        <nav class="nav-header" aria-label="Navegação principal">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -31,78 +31,86 @@
         </nav>
     </header>
 
-    <main>
+    <main role="main" aria-labelledby="main-title">
         <div class="content-description">
-            <h1>construa o futuro profissional que você sempre desejou.</h1>
+            <h1 id="main-title">construa o futuro profissional que você sempre desejou.</h1>
             <p>Plataforma inteligente para quem busca migrar de carreira: orientação, conexões e vagas</p>
         </div>
         <div class="main-image">
-            <img src="./src/assets/image-main.svg" alt="menino branco de cabelos preto, vestindo uma blusa vermelha mexendo em um notebook" title="menino mexendo no computador" loading="lazy">
+            <img src="./src/assets/image-main.svg" alt="Jovem desenvolvedor trabalhando em um notebook, representando oportunidades de carreira" loading="lazy">
         </div>
     </main>
 
-    <section class="section-register">
+    <section class="section-register" aria-labelledby="register-title">
 
         <div class="card-form">
-            <h2>Cadastre-se</h2>
-            <form action="">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="text" placeholder="Área de estudo" required>
-                <input type="password" placeholder="Área que deseja migrar" required>
+            <h2 id="register-title">Cadastre-se</h2>
+            <form action="" aria-label="Formulário de cadastro">
+                <div class="form-group">
+                    <label for="name">Seu nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="study-area">Área de estudo</label>
+                    <input type="text" id="study-area" name="study-area" placeholder="Digite sua área de estudo" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="desired-area">Área que deseja migrar</label>
+                    <input type="text" id="desired-area" name="desired-area" placeholder="Digite a área desejada" required aria-required="true">
+                </div>
                 <button class="btn-register" type="submit">Cadastre-se</button>
             </form>
         </div>
 
     </section>
 
-    <section class="section-plan">
+    <section class="section-plan" aria-labelledby="plan-title">
         
-            <h2>Seu plano personalizado em 3 etapas</h2>
+            <h2 id="plan-title">Seu plano personalizado em 3 etapas</h2>
             
-                <div class="cards-container">
-                    <article class="card-plan">
+                <div class="cards-container" role="list">
+                    <article class="card-plan" role="listitem">
                         <h3>1. Análise de Habilidades</h3>
                         <p>Compara seu perfil atual à área desejada e identifica gaps e pontos fortes.</p>
                     </article>
-                    <article class="card-plan">
+                    <article class="card-plan" role="listitem">
                         <h3>2. Sugestões de Cursos</h3>
-                        <p>Cursos personalizados (gratuitos e pagos) para cada etapa da sua jornada..</p>
+                        <p>Cursos personalizados (gratuitos e pagos) para cada etapa da sua jornada.</p>
                     </article>
-                    <article class="card-plan">
-                        <h3>3. Gerar Roadmap </h3>
+                    <article class="card-plan" role="listitem">
+                        <h3>3. Gerar Roadmap</h3>
                         <p>Criamos um passo-a-passo intuitivo rumo a sua nova área.</p>
                     </article>
                 </div>
-            </div>
-        </div>
     </section>
 
-    <section class="section-connections">
+    <section class="section-connections" aria-labelledby="connections-title">
 
         <div class="connection-container">
-            <h2>Conexões recentes</h2>
-            <article class="card-connections">
-                <img src="./src/assets/perfil1.svg" alt="">
-                <div class="card-info">
-                    <h3>Gabriel Mendes</h3>
-                    <p>Migrou de Suporte Técnico para Front-end</p>
-                </div>
-            </article>
-            <article class="card-connections">
-                <img src="./src/assets/perfil2.svg" alt="">
-                <div class="card-info">
-                    <h3>Ana Cláudia Santos</h3>
-                    <p>Migrou de Administração para Data Science</p>
-                </div>
-            </article>
-            <article class="card-connections">
-                <img src="./src/assets/perfil3.svg  " alt="">
-                <div class="card-info">
-                    <h3>Monique Barbosa</h3>
-                    <p>Migrou de Vendas para UX/UI</p>
-                </div>
-            </article>
-
+            <h2 id="connections-title">Conexões recentes</h2>
+            <div role="list">
+                <article class="card-connections" role="listitem">
+                    <img src="./src/assets/perfil1.svg" alt="Foto de perfil de Gabriel Mendes">
+                    <div class="card-info">
+                        <h3>Gabriel Mendes</h3>
+                        <p>Migrou de Suporte Técnico para Front-end</p>
+                    </div>
+                </article>
+                <article class="card-connections" role="listitem">
+                    <img src="./src/assets/perfil2.svg" alt="Foto de perfil de Ana Cláudia Santos">
+                    <div class="card-info">
+                        <h3>Ana Cláudia Santos</h3>
+                        <p>Migrou de Administração para Data Science</p>
+                    </div>
+                </article>
+                <article class="card-connections" role="listitem">
+                    <img src="./src/assets/perfil3.svg" alt="Foto de perfil de Monique Barbosa">
+                    <div class="card-info">
+                        <h3>Monique Barbosa</h3>
+                        <p>Migrou de Vendas para UX/UI</p>
+                    </div>
+                </article>
+            </div>
         </div>
         <div class="connection-content">
             <h4>Conecte-se com pessoas que possuem o mesmo objetivo que você!</h4>
@@ -159,6 +167,55 @@
         </div>
         
     </section>
+
+  <footer role="contentinfo">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Talently <span>Hub</span></h2>
+                    <p class="slogan-footer">Conectando talentos</p>
+                    
+                    <div class="footer-socials" aria-label="Redes sociais">
+                        <a href="#" class="social-icons" aria-label="Visite nosso Instagram" title="Instagram">
+                            <img src="./src/assets/icon-instagram.svg" alt="" aria-hidden="true" loading="lazy">
+                        </a>
+                        <a href="#" class="social-icons" aria-label="Visite nossa página no Facebook" title="Facebook">
+                            <img src="./src/assets/icon-facebook.svg" alt="" aria-hidden="true" loading="lazy">
+                        </a>
+                        <a href="#" class="social-icons" aria-label="Visite nosso perfil no X (Twitter)" title="X">
+                            <img src="./src/assets/icon-X.svg" alt="" aria-hidden="true" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-navigation">
+                    <div class="footer-container">
+                        <h3>Acesso</h3>
+                        <nav aria-label="Links de acesso">
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-item">Home</a></li>
+                                <li><a href="#" class="footer-item">Sobre</a></li>
+                                <li><a href="#" class="footer-item">Vagas</a></li>
+                                <li><a href="#" class="footer-item">Login</a></li>
+                                <li><a href="#" class="footer-item">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <div class="footer-container">
+                        <h3>Termos</h3>
+                        <nav aria-label="Links de termos e políticas">
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-item">Termos de Uso</a></li>
+                                <li><a href="#" class="footer-item">Políticas de Privacidade</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright"> 2025 Talently Hub</div>
+
+    </footer>
     
 </body>
 </html>
