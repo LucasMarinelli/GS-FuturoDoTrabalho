@@ -106,7 +106,6 @@ O projeto foi desenvolvido seguindo os padrões de acessibilidade web:
 GS-FuturoDoTrabalho/
 ├── index.html                 # Arquivo principal HTML
 ├── README.md                  # Este arquivo
-├── ACESSIBILIDADE.md          # Documentação de acessibilidade
 ├── src/
 │   ├── css/
 │   │   └── style.css          # Estilos CSS
@@ -151,16 +150,6 @@ GS-FuturoDoTrabalho/
 
 ---
 
-## 📱 Responsividade
-
-O projeto foi desenvolvido com foco em responsividade:
-- **Desktop**: Layout completo com todos elementos
-- **Tablet**: Adaptação de espaçamento e tamanhos
-- **Mobile**: Navegação otimizada e elementos redimensionados
-
-> **Nota**: Ajustes CSS adicionais podem ser necessários para otimizar em telas muito pequenas
-
----
 
 ## 🔧 Customização
 
